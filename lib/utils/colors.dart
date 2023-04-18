@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
+  static const c_22C348 = Color(0xFF22C348);
+  static const c_F9A825 = Color(0xFFF9A825);
   static const c_F2271C = Color(0xFFF2271C);
   static const c_F5F5F5 = Color(0xFFF5F5F5);
   static const c_E1E1E1 = Color(0xFFE1E1E1);
