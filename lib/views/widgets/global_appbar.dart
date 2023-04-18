@@ -1,4 +1,7 @@
+import 'package:delivery_user/utils/colors.dart';
+import 'package:delivery_user/utils/style.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class GloabalAppBar extends StatelessWidget implements PreferredSizeWidget {
   const GloabalAppBar({
@@ -13,11 +16,13 @@ class GloabalAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      elevation: 2,
       centerTitle: true,
       backgroundColor: appbarColor,
       title: Text(
         title,
-        style: const TextStyle(color: Colors.black),
+        style: MyTextStyle.poppinsRegular
+            .copyWith(fontSize: 18.sp, color: AppColors.c_222222),
       ),
     );
   }
