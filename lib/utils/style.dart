@@ -7,6 +7,11 @@ class MyTextStyle {
     fontFamily: 'Poppins',
     fontSize: 14.sp,
   );
+  static final TextStyle poppinsLight15 = TextStyle(
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Poppins',
+    fontSize: 15.sp,
+  );
 
   static final TextStyle poppinsRegular = TextStyle(
     fontWeight: FontWeight.w400,
@@ -28,6 +33,11 @@ class MyTextStyle {
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w600,
     fontSize: 14.sp,
+  );
+  static final TextStyle poppinsSemiBold12 = TextStyle(
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w400,
+    fontSize: 12.sp,
   );
 
   static final TextStyle poppinsBold = TextStyle(

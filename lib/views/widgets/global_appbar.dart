@@ -3,8 +3,8 @@ import 'package:delivery_user/utils/style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class GloabalAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const GloabalAppBar({
+class GlobalAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const GlobalAppBar({
     Key? key,
     required this.title,
     required this.appbarColor,
