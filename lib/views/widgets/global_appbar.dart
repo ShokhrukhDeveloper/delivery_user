@@ -21,6 +21,7 @@ class GloabalAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: appbarColor,
       title: Text(
         title,
+        overflow: TextOverflow.visible,
         style: MyTextStyle.poppinsRegular
             .copyWith(fontSize: 18.sp, color: AppColors.c_222222),
       ),
