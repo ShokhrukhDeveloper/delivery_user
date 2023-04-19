@@ -17,8 +17,21 @@ class MyTextStyle {
     fontWeight: FontWeight.w400,
     fontFamily: 'Poppins',
     fontSize: 14.sp,
-  );  static final TextStyle poppinsRegular15 = TextStyle(
+    color: Colors.white
+  );
+  static final TextStyle poppinsW400Regular = TextStyle(
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Poppins',
+    fontSize: 14.sp,
+    color: Colors.black
+  );
+  static final TextStyle poppinsRegular15 = TextStyle(
     fontWeight: FontWeight.w500,
+    fontFamily: 'Poppins',
+    fontSize: 15.sp,
+  );
+  static final TextStyle poppinsW600Regular15 = TextStyle(
+    fontWeight: FontWeight.w600,
     fontFamily: 'Poppins',
     fontSize: 15.sp,
   );

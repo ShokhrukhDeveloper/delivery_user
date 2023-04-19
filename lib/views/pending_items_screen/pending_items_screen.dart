@@ -15,7 +15,7 @@ class _PendingItemsScreenState extends State<PendingItemsScreen> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: GlobalAppBar(
+      appBar: const GlobalAppBar(
         title: 'Yetkazilayotgan buyutrmalar',
         appbarColor: AppColors.c_F9A825,
       ),

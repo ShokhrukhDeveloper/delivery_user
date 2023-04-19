@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       minTextAdapt: true,
       builder: (context, child) {
-        return MaterialApp(
+        return const MaterialApp(
           debugShowCheckedModeBanner: false,
           home: BottomNavBar(),
         );

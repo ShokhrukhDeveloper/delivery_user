@@ -1,5 +1,6 @@
 import 'package:delivery_user/utils/colors.dart';
 import 'package:delivery_user/views/completed_Item_screen/completed_item_screen.dart';
+import 'package:delivery_user/views/create_new_order_screen/create_new_order_screen.dart';
 import 'package:delivery_user/views/pending_items_screen/pending_items_screen.dart';
 import 'package:delivery_user/views/returned_items/returned_items_screen.dart';
 import 'package:delivery_user/views/widgets/global_appbar.dart';
@@ -20,7 +21,7 @@ class MainScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               InkWell(
-                onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (c)=>const CancelledItemsScreen())  ),
+                onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (c)=>const CreateNewOrderScreen())  ),
                 child: Container(
                   margin: const EdgeInsets.only(top: 12),
                   padding: const EdgeInsets.all(12),
@@ -28,7 +29,7 @@ class MainScreen extends StatelessWidget {
                   height:  ((MediaQuery.of(context).size.width-24)/2)*0.6,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
-                    color: const Color(0xff6BB3FA),
+                    color: AppColors.c_6BB3FA,
                   ),
                   child: const Text("Yangi buyurtma yaratish",
                     style: TextStyle(

@@ -7,11 +7,13 @@ class GlobalAppBar extends StatelessWidget implements PreferredSizeWidget {
   const GlobalAppBar({
     Key? key,
     required this.title,
-    required this.appbarColor,
+    required this.appbarColor, this.titleColor,
   }) : super(key: key);
 
   final String title;
   final Color appbarColor;
+  final Color? titleColor;
+
 
   @override
   Widget build(BuildContext context) {
@@ -19,10 +21,11 @@ class GlobalAppBar extends StatelessWidget implements PreferredSizeWidget {
       elevation: 2,
       centerTitle: true,
       backgroundColor: appbarColor,
+
       title: Text(
         title,
         style: MyTextStyle.poppinsRegular
-            .copyWith(fontSize: 18.sp, color: AppColors.c_222222),
+            .copyWith(fontSize: 18.sp, color: titleColor??AppColors.c_222222),
       ),
     );
   }
