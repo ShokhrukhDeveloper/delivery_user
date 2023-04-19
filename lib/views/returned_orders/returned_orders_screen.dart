@@ -21,17 +21,18 @@ class ReturnedItemsScreen extends StatelessWidget {
           top: 15,
         ),
         children: List.generate(
-            10,
-            (index) => ReturnedItem(
-                  onTap: () {
-                    showModalBottomSheet(
-                      context: context,
-                      builder: (context) {
-                        return Column();
-                      },
-                    );
-                  },
-                )),
+          10,
+          (index) => ReturnedItem(
+            onTap: () {
+              showModalBottomSheet(
+                context: context,
+                builder: (context) {
+                  return Column();
+                },
+              );
+            },
+          ),
+        ),
       ),
     );
   }

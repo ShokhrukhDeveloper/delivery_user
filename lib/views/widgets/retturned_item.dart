@@ -1,25 +1,26 @@
 import 'package:delivery_user/utils/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 
 class ReturnedItem extends StatelessWidget {
-  const ReturnedItem({
-    super.key,required this.onTap});
+  const ReturnedItem({super.key, required this.onTap});
   final VoidCallback onTap;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 8),
       child: ZoomTapAnimation(
-        onTap:  onTap,
+        onTap: onTap,
         child: Container(
           padding: EdgeInsets.only(left: 8, top: 8),
           width: 350,
           height: 90,
           decoration: BoxDecoration(
-              color: AppColors.c_F5F5F5,
-              borderRadius: BorderRadius.circular(5),
-              border: Border.all(color: Colors.black)),
+            color: AppColors.c_F5F5F5,
+            borderRadius: BorderRadius.circular(5.r),
+            border: Border.all(color: Colors.black),
+          ),
           child: Row(
             children: [
               Container(

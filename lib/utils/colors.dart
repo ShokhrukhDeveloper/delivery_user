@@ -10,5 +10,9 @@ class AppColors {
   static const c_F9F9F9 = Color(0xFFF9F9F9);
   static const c_222222 = Color(0xFF222222);
   static const c_870B9B = Color(0xFF870B9B);
+  static const white = Color(0xFFFFFFFF);
+  static const primaryPR400 = Color(0xFF6BB3FA);
+  static const greenG600 = Color(0xFF22C348);
+  static const yellowColor = Color(0xFFF9A825);
 
 }
