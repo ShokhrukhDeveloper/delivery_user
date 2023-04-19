@@ -30,8 +30,8 @@ class _PendingItemsScreenState extends State<CancelledItemsScreen> {
                 endDate: "27/02/2021   14:02 ",
                 price: "15000",
                 statusColor: AppColors.c_F2271C,
-                status: "qaytarilgan")),
-      ),
+                status: "qaytarilgan")))
+
     );
   }
 }
