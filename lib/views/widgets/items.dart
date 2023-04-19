@@ -94,7 +94,8 @@ class OrderItem extends StatelessWidget {
                             )
                           ],),
                       ],
-                    ))
+                    )),
+
               ],
             ),
           )
