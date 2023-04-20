@@ -1,4 +1,5 @@
 import 'package:delivery_user/utils/colors.dart';
+import 'package:delivery_user/utils/style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
@@ -9,13 +10,16 @@ class ReturnedItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 8),
+      padding: const EdgeInsets.symmetric(vertical: 8),
       child: ZoomTapAnimation(
         onTap: onTap,
         child: Container(
-          padding: EdgeInsets.only(left: 8, top: 8),
-          width: 350,
-          height: 90,
+          padding: const EdgeInsets.only(
+            left: 8,
+            top: 8,
+          ),
+          width: 350.w,
+          height: 90.h,
           decoration: BoxDecoration(
             color: AppColors.c_F5F5F5,
             borderRadius: BorderRadius.circular(5.r),
@@ -24,8 +28,8 @@ class ReturnedItem extends StatelessWidget {
           child: Row(
             children: [
               Container(
-                width: 75,
-                height: 75,
+                width: 75.w,
+                height: 75.h,
                 decoration: BoxDecoration(
                   color: AppColors.c_FDA987,
                   shape: BoxShape.circle,
@@ -35,33 +39,59 @@ class ReturnedItem extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 15,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Nitro 5 Gaming Laptop - AN515 \n-54 - 70KK"),
-                  Text("27/02/2021   14:02 "),
-                  Text("27/02/2021   14:02 "),
+                  Text(
+                    "Nitro 5 Gaming Laptop - \nAN515 -54 - 70KK",
+                    style: MyTextStyle.poppinsMedium.copyWith(
+                      fontSize: 15.sp,
+                      color: const Color(0xFF000000),
+                    ),
+                  ),
+                  Text(
+                    "27/02/2021   14:02 ",
+                    style: MyTextStyle.poppinsMedium.copyWith(
+                      fontSize: 12.sp,
+                      color: const Color(0xFF000000),
+                    ),
+                  ),
+                  Text(
+                    "27/02/2021   14:02 ",
+                    style: MyTextStyle.poppinsMedium.copyWith(
+                      fontSize: 12.sp,
+                      color: const Color(0xFF000000),
+                    ),
+                  ),
                 ],
               ),
-              Stack(
-                clipBehavior: Clip.none,
-                children: [
-                  Container(
-                    width: 67,
-                    height: 13,
-                    decoration: BoxDecoration(
-                        color: AppColors.c_F2271C,
-                        borderRadius: BorderRadius.circular(18)),
-                  ),
-                  Positioned(
-                    top: 20,
-                    child: Text("15 000 sum"),
-                  ),
-                ],
-              )
+              // Padding(
+              //   padding: EdgeInsets.only(right: 95),
+              //   child: Column(
+              //     mainAxisAlignment: MainAxisAlignment.end,
+              //     children: [
+              //        Container(
+              //             width: 67,
+              //             height: 13.h,
+              //             decoration: BoxDecoration(
+              //               color: AppColors.c_F2271C,
+              //               borderRadius: BorderRadius.circular(18.r),
+              //             ),
+              //           ),
+              //           Text(
+              //             "15 000 sum",
+              //             style: MyTextStyle.poppinsRegular.copyWith(
+              //               fontSize: 15.sp,
+              //               color: const Color(0xFF000000),
+              //             ),
+              //           ),
+
+              //     ],
+              //   ),
+              // ),
             ],
           ),
         ),
