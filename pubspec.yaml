@@ -10,8 +10,10 @@ environment:
 
 
 dependencies:
+  font_awesome_flutter: ^10.4.0
   flutter:
     sdk: flutter
+
 
 
   #UI
@@ -24,14 +26,12 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
- 
-  flutter_lints: ^2.0.0
+
 
 
 flutter:
 
 
-  uses-material-design: true
 
   assets:
     - assets/images/

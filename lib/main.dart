@@ -1,3 +1,4 @@
+import 'package:delivery_user/view/login_view.dart';
 import 'package:delivery_user/router/router.dart';
 import 'package:delivery_user/utils/constants.dart';
 import 'package:delivery_user/views/bottom_nav/bottom_navbar.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return ScreenUtilInit(
       designSize: const Size(375, 667),
       splitScreenMode: true,
