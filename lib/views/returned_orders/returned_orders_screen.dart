@@ -10,7 +10,7 @@ class ReturnedItemsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const GloabalAppBar(
+      appBar: const GlobalAppBar(
         title: "Qaytarilgan buyumlar",
         appbarColor: AppColors.c_F2271C,
       ),
@@ -25,7 +25,6 @@ class ReturnedItemsScreen extends StatelessWidget {
           10,
           (index) => ReturnedItem(
             onTap: () {
-              
               showModalBottomSheet(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12.r),
