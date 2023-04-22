@@ -18,6 +18,8 @@ class _PendingItemsScreenState extends State<PendingItemsScreen> {
       appBar: const GlobalAppBar(
         title: 'Yetkazilayotgan buyutrmalar',
         appbarColor: AppColors.c_F9A825,
+        isMain: false,
+
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 11),

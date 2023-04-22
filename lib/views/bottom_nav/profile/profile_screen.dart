@@ -8,7 +8,8 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: GlobalAppBar(title: "Account", appbarColor: AppColors.c_F9F9F9),
+      appBar: GlobalAppBar(
+          isMain: true, title: "Account", appbarColor: AppColors.c_F9F9F9),
     );
   }
 }

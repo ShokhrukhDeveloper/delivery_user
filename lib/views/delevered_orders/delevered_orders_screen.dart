@@ -9,6 +9,7 @@ class DeleveredOrdersScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: GlobalAppBar(
+          isMain: false,
           title: "Yetkazilayotgan buyutrmalar",
           appbarColor: AppColors.yellowColor),
     );

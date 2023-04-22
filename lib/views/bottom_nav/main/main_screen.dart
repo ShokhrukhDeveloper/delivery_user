@@ -12,7 +12,9 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const GlobalAppBar(
-          title: "Assalom alekum: Shoxrux", appbarColor: AppColors.c_F9F9F9),
+          isMain: true,
+          title: "Assalom alekum: Shoxrux",
+          appbarColor: AppColors.c_F9F9F9),
       body: Padding(
         padding: EdgeInsets.only(top: 12.h, left: 12, right: 12),
         child: GridView(
