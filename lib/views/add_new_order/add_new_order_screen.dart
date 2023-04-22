@@ -8,7 +8,7 @@ class AddNewOrderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: GloabalAppBar(
+      appBar:  GlobalAppBar(
           title: "Buyurtma yaratish", appbarColor: AppColors.primaryPR400),
     );
   }

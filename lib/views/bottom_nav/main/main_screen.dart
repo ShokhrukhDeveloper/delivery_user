@@ -11,7 +11,7 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const GloabalAppBar(
+      appBar: const GlobalAppBar(
           title: "Assalom alekum: Shoxrux", appbarColor: AppColors.c_F9F9F9),
       body: Padding(
         padding: EdgeInsets.only(top: 12.h, left: 12, right: 12),

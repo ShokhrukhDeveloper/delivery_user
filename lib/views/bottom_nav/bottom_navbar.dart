@@ -24,10 +24,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   void initState() {
     pages = [
-      MainScreen(),
-      HistoryScreen(),
-      BasketScreen(),
-      ProfileScreen(),
+      const MainScreen(),
+      const HistoryScreen(),
+      const BasketScreen(),
+      const ProfileScreen(),
     ];
     super.initState();
   }
