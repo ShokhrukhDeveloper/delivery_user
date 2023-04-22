@@ -25,7 +25,11 @@ class ReturnedItemsScreen extends StatelessWidget {
           10,
           (index) => ReturnedItem(
             onTap: () {
+              
               showModalBottomSheet(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12.r),
+                ),
                 context: context,
                 builder: (context) {
                   return Container(
