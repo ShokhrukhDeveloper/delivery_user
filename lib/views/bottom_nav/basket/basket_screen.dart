@@ -9,7 +9,9 @@ class BasketScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: GlobalAppBar(title: "Buyurtmalar tarixi", appbarColor: AppColors.c_870B9B)
-    );
+        appBar: GlobalAppBar(
+            isMain: true,
+            title: "Buyurtmalar tarixi",
+            appbarColor: AppColors.c_870B9B));
   }
 }

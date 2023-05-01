@@ -3,7 +3,6 @@ import 'package:delivery_user/views/widgets/global_appbar.dart';
 import 'package:flutter/material.dart';
 import '../widgets/items.dart';
 
-
 class CompletedItemsScreen extends StatelessWidget {
   const CompletedItemsScreen({super.key});
 
@@ -11,6 +10,7 @@ class CompletedItemsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const GlobalAppBar(
+        isMain: false,
         title: "Qaytarilgan buyumlar",
         appbarColor: AppColors.c_22C348,
       ),
@@ -23,21 +23,22 @@ class CompletedItemsScreen extends StatelessWidget {
         ),
         children: List.generate(
             10,
-                (index) => OrderItem(
-              onTap: () {
-                showModalBottomSheet(
-                  context: context,
-                  builder: (context) {
-                    return Column();
+            (index) => OrderItem(
+                  onTap: () {
+                    showModalBottomSheet(
+                      context: context,
+                      builder: (context) {
+                        return Column();
+                      },
+                    );
                   },
-                );
-              }, startDate: '27/02/2021   14:02 ',
+                  startDate: '27/02/2021   14:02 ',
                   title: 'Nitro 5 Gaming Laptop - AN515 -54 - 70KK',
                   endDate: '27/02/2021   14:02 ',
                   price: '25 000',
                   status: "yakunlangan",
                   statusColor: AppColors.c_22C348,
-            )),
+                )),
       ),
     );
   }

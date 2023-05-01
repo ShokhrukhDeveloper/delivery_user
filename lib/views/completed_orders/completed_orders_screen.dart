@@ -9,7 +9,9 @@ class CompletedOrdersScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: GlobalAppBar(
-          title: "Yakunlang buyutrmalar", appbarColor: AppColors.greenG600),
+          isMain: false,
+          title: "Yakunlang buyutrmalar",
+          appbarColor: AppColors.greenG600),
     );
   }
 }

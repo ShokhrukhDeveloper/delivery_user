@@ -13,6 +13,7 @@ class ReturnedItemsScreen extends StatelessWidget {
       appBar: const GlobalAppBar(
         title: "Qaytarilgan buyumlar",
         appbarColor: AppColors.c_F2271C,
+        isMain: false,
       ),
       body: ListView(
         physics: const BouncingScrollPhysics(),
