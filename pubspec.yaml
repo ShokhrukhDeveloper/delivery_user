@@ -50,6 +50,8 @@ flutter:
 
   assets:
     - assets/svg/
+    - images/car.jpg
+    - images/user_image.jpg
 
 
   

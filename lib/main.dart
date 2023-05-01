@@ -1,5 +1,6 @@
 import 'package:delivery_user/router/router.dart';
 import 'package:delivery_user/utils/constants.dart';
+import 'package:delivery_user/views/bottom_nav/bottom_navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return const MaterialApp(
           debugShowCheckedModeBanner: false,
-          // home: BottomNavBar(),
+          home: BottomNavBar(),
           onGenerateRoute: AppRouter.generateRoute,
           initialRoute: bottomNavbar,
         );
